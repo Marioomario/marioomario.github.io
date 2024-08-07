@@ -1,162 +1,139 @@
 *{
     box-sizing: border-box;
-    font-family: Figtree, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family:Inter, sans-serif;
 }
 
-
 body{
-    background: hsl(47, 88%, 63%);
+    background: hsl(0, 0%, 8%);
+    height: 100vh;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: auto;
-    height: 100vh;
 }
 
-.main__container{
-    position: relative;
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    width: 385px;
-    height: 530px;
-   
+a {
+    text-decoration: none;
 }
 
 .global{
-    background-color: #fff;
+    background: hsl(0, 0%, 12%);
+    width: 380px;
+    height: auto;
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
     align-items: center;
-    width: 375px;
-    height: 522px;
-    border-radius: 20px;
-    padding: 18px 0px 30px 0px;
-    border: 1px solid;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    
+    border-radius: 12px;
+    padding: 10px;
 }
-
-
-
-
-.blank__black{
-    background: rgb(0,0,0);
-    border-radius: 20px;
-    width: 370px;
-    height: 520px;
-
-}
-
 
 .img__container{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 25px;
+
 }
 
-#image__id {
-    width: 336px;
-    height: 200px;
-    border-radius: 10px;
-}
-
-.content__container{
-    padding: 0 20px;
-}
-
-.med__para {
-    font-size: 16px;
-    color :hsl(0, 0%, 42%),
-}
-
-
-.med__content h1 {
-    font-size: 1.4rem;
-    transition: 0.2s;
-}
-
-.med__content h1:hover {
-    cursor: pointer;
-    color: hsl(47, 88%, 63%);
-}
-
-
-.pic__content{
-    display: flex;
-    column-gap: 10px;
+.detail__content {
+    color: hsl(0, 0%, 100%);
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
-}
-#image__ava{
-    width: 30px;
-    height: 30px;
+    row-gap: 8px;
+    margin-top: 15px;
+
 }
 
-.pic__content p {
-    font-size: 16px;
-    font-weight: 800;
+.detail__content p {
+    color: hsl(75, 94%, 57%);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: centers;
+
 }
 
-.contenu__type{
-    background-color: hsl(47, 88%, 63%);
+.detail__content h1 {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: centers;
+}
+
+.career__content p{
+    color: hsl(0, 0%, 100%);
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#img__content{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border: 1px solid hsl(75, 94%, 57%);
+}
+
+.social__link{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+    margin-top: 1.4rem;
+    margin-bottom: 0.6rem;
+}
+
+
+
+
+
+.soc{
+    background-color:  hsl(0, 0%, 20%);
+    height: 40px;
+    width: 320px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 20px;
-    width: 80px;
-    padding: 14px 18px;
-    border-radius: 5px;
-    margin-top: 25px;
-}
-.contenu__type p {
-    font-weight: 800;
-    font-size: 14px;
+    border-radius: 8px;
 }
 
-.date__pub{
-    font-size: 14px;
-    font-weight: 550;
+.soc a:hover{
+    background-color: hsl(75, 94%, 57%);
+    cursor: pointer;
+    color: hsl(0, 0%, 0%);
 }
 
-@media screen and (max-width:800px){
-    .main__container{
-        width: 320px;
-        height: 488px;
-    }
+
+.soc a {
+    
+    height:100%;
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+@media screen and (max-width:700px){
     .global{
-        width: 313px;
-        height: 480px;
-    }
-    .blank__black{
-        width: 305px;
-        height: 480px;
-    }
-    .img__container{
-       
-        width: 279px;
-        height: 169px;
-        display: flex;
-        justify-self: center;
-        overflow: hidden;
-
+        width: 330px;
     }
     
-    #image__id {
-        width: 279px;
-        height: 169px;
-        border-radius: 10px;
-        
+    .soc{
+        width: 280px;
     }
-    .content__container{
-        padding: 0 17px;
-    }
-    .contenu__type{
+    .img__container{
         margin-top: 20px;
     }
-
 }
-
